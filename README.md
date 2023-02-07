@@ -21,7 +21,7 @@ Mainstream 3D representation learning approaches are built upon contrastive or g
  <img src="./figure/framework.png" width = "1100"  align=center />
 </div>
 
-Code will be coming soon after reviewing process.
+Code will be coming soon after the reviewing process.
 
 ## Contact
 
