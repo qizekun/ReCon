@@ -11,7 +11,12 @@ Created by  [Zekun Qi](https://github.com/qizekun)\*, [Runpei Dong](https://runp
 
 [[arXiv]](https://arxiv.org/abs/2302.02318) 
 
-This repository contains the code release of paper **Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining**.
+This repository contains the code release of paper **Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining** (ICML 2023)
+
+## News
+
+- 🎉 Apr, 2023: [**ReCon**](https://arxiv.org/abs/2302.02318) accepted by ICML 2023, code and models will be available very soon
+- 💥 Feb, 2023: Check out our previous work [**ACT**](https://arxiv.org/abs/2212.08320), which has been accepted by ICLR 2023, see codes [here](https://github.com/RunpeiDong/ACT)
 
 ## Contrast with Reconstruct
 
@@ -22,9 +27,6 @@ Mainstream 3D representation learning approaches are built upon contrastive or g
 </div>
 Code will be coming soon after the reviewing process.
 
-## News
-
-- 💥 Feb, 2023: Check out our previous work [**ACT**](https://arxiv.org/abs/2212.08320), which has been accepted by ICLR 2023
 
 ## Contact
 
@@ -40,14 +42,24 @@ This codebase is built upon [Point-MAE](https://github.com/Pang-Yatian/Point-MAE
 
 ## Citation
 
-If you find our work useful in your research, please consider citing:
+If you find our work useful in your research, please consider citing ReCon:
 
-```tex
-@article{recon2023,
+```latex
+@inproceedings{qi2023recon,
   title={Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining},
   author={Qi, Zekun and Dong, Runpei and Fan, Guofan and Ge, Zheng and Zhang, Xiangyu and Ma, Kaisheng and Yi, Li},
-  journal={arXiv preprint arXiv:2302.02318},
+  booktitle={International Conference on Machine Learning (ICML) },
   year={2023}
+}
+```
+and closely related work ACT:
+```latex
+@inproceedings{dong2023act,
+  title={Autoencoders as Cross-Modal Teachers: Can Pretrained 2D Image Transformers Help 3D Representation Learning?},
+  author={Runpei Dong and Zekun Qi and Linfeng Zhang and Junbo Zhang and Jianjian Sun and Zheng Ge and Li Yi and Kaisheng Ma},
+  booktitle={The Eleventh International Conference on Learning Representations (ICLR) },
+  year={2023},
+  url={https://openreview.net/forum?id=8Oun8ZUVe8N}
 }
 ```
 
