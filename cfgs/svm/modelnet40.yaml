@@ -1,0 +1,22 @@
+dataset : {
+  train : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
+            others: {subset: 'train'}},
+  val : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
+            others: {subset: 'test'}},
+  test : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
+            others: {subset: 'test'}}}
+model : {
+  NAME: PointTransformerSVM,
+  trans_dim: 384,
+  depth: 12,
+  drop_path_rate: 0.1,
+  cls_dim: 40,
+  num_heads: 6,
+  group_size: 32,
+  num_group: 64,
+  encoder_dims: 384,
+}
+
+npoints: 1024
+total_bs : 128
+grad_norm_clip : 10

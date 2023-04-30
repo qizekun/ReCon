@@ -1,0 +1,7 @@
+NAME: ShapeNet
+DATA_PATH: data/ShapeNet55-34/ShapeNet-55
+N_POINTS: 8192
+PC_PATH: data/ShapeNet55-34/shapenet_pc
+IMG_PATH: data/ShapeNet55-34/shapenet_img
+TEXT_PATH: data/ShapeNet55-34/shapenet55.json
+ratio: 1.0

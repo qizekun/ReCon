@@ -1,0 +1,27 @@
+dataset : {
+  train : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
+            others: {subset: 'train'}},
+  val : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
+            others: {subset: 'test'}},
+  test : { _base_: cfgs/dataset_configs/ModelNet40.yaml,
+            others: {subset: 'test'}}}
+model : {
+  NAME: PointTransformerZeroShot,
+  trans_dim: 384,
+  depth: 12,
+  drop_path_rate: 0.1,
+  num_heads: 6,
+  group_size: 32,
+  num_group: 64,
+  encoder_dims: 384,
+  # type: 'text',
+  # type: 'image',
+  type: 'full',
+  ratio: 0.25,
+  img_encoder: 'ViT-B/32',
+  text_encoder: 'ViT-B/32',
+}
+
+npoints: 1024
+total_bs : 32
+grad_norm_clip : 10
