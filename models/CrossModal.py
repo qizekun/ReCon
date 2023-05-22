@@ -147,8 +147,7 @@ class TextTransformer(nn.Module):
                          'A 3D rendering image of ',
                          'A 3D rendering image of a '
                          ]
-        self.template_last = ['.', ' with white background.', ' with white context.']
-        # self.white = nn.LayerNorm(self.embed_dim, elementwise_affine=False)
+        self.template_last = ['.', ' with white background.', ' with black context.']
 
     def forward(self, text, index=0):
         if isinstance(text, str):

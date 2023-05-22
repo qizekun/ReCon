@@ -1,5 +1,4 @@
-# ReCon: Contrast with Reconstruct
-
+# 🪖 ReCon: Contrast with Reconstruct
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/contrast-with-reconstruct-contrastive-3d/3d-point-cloud-linear-classification-on)](https://paperswithcode.com/sota/3d-point-cloud-linear-classification-on?p=contrast-with-reconstruct-contrastive-3d)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/contrast-with-reconstruct-contrastive-3d/3d-point-cloud-classification-on-scanobjectnn)](https://paperswithcode.com/sota/3d-point-cloud-classification-on-scanobjectnn?p=contrast-with-reconstruct-contrastive-3d)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/contrast-with-reconstruct-contrastive-3d/3d-point-cloud-classification-on-modelnet40)](https://paperswithcode.com/sota/3d-point-cloud-classification-on-modelnet40?p=contrast-with-reconstruct-contrastive-3d)
@@ -8,11 +7,12 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/contrast-with-reconstruct-contrastive-3d/zero-shot-transfer-3d-point-cloud-1)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-1?p=contrast-with-reconstruct-contrastive-3d)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/contrast-with-reconstruct-contrastive-3d/zero-shot-transfer-3d-point-cloud-2)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-2?p=contrast-with-reconstruct-contrastive-3d)
 
-Created by  [Zekun Qi](https://github.com/qizekun)\*, [Runpei Dong](https://runpeidong.com/)\*, [Guofan Fan](https://github.com/Asterisci), [Zheng Ge](https://scholar.google.com.hk/citations?user=hJ-VrrIAAAAJ&hl=en&oi=ao), [Xiangyu Zhang](https://scholar.google.com.hk/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html), [Li Yi](https://ericyi.github.io/)
+> [**Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining**](https://arxiv.org/abs/2302.02318) **ICML 2023** <br>
+> [Zekun Qi](https://github.com/qizekun)\*, [Runpei Dong](https://runpeidong.com/)\*, [Guofan Fan](https://github.com/Asterisci), [Zheng Ge](https://scholar.google.com.hk/citations?user=hJ-VrrIAAAAJ&hl=en&oi=ao), [Xiangyu Zhang](https://scholar.google.com.hk/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html) and [Li Yi](https://ericyi.github.io/) <br>
 
-[[arXiv]](https://arxiv.org/abs/2302.02318) 
+[arXiv](https://arxiv.org/abs/2302.02318) | [Models](https://drive.google.com/drive/folders/17Eoy5N96dcTQJplCOjyeeVjSYyjW5QEd?usp=share_link)
 
-This repository contains the code release of paper **Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining** (ICML 2023).
+This repository contains the code release of ReCon: **Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining** (ICML 2023). ReCon is also short for *reconnaissance* 🪖.
 
 ## Contrast with Reconstruct
 
@@ -62,8 +62,9 @@ We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [DA
 | Classification    | ScanObjectNN   | [finetune_scan_objonly.yaml](./cfgs/full/finetune_scan_objonly.yaml) | 93.80%     | [OBJ_ONLY](https://drive.google.com/file/d/1kvowgPbvlFxx3B5WSfL3LiKZ5--5s52b/view?usp=share_link)        |
 | Classification    | ModelNet40(1k) | [finetune_modelnet.yaml](./cfgs/full/finetune_modelnet.yaml)         | 94.5%      | [ModelNet_1k](https://drive.google.com/file/d/1UsRuIc7ND2n4PjYyF3n0tT3hf7alyOML/view?usp=share_link)     |
 | Classification    | ModelNet40(8k) | [finetune_modelnet_8k.yaml](./cfgs/full/finetune_modelnet_8k.yaml)   | 94.7%      | [ModelNet_8k](https://drive.google.com/file/d/1qUuT6sjhZw3gn0rFj-qDfYG6VMBXF0sT/view?usp=share_link)     |
-| Zero-Shot         | ModelNet10     | [zeroshot_modelnet10.yaml](./cfgs/zeroshot/modelnet10.yaml)          | 81.6%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
-| Zero-Shot         | ModelNet40     | [zeroshot_modelnet40.yaml](./cfgs/zeroshot/modelnet40.yaml)          | 66.8%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
+| Zero-Shot         | ModelNet10     | [zeroshot_modelnet10.yaml](./cfgs/zeroshot/modelnet10.yaml)          | 75.6%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
+| Zero-Shot         | ModelNet40     | [zeroshot_modelnet40.yaml](./cfgs/zeroshot/modelnet40.yaml)          | 61.7%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
+| Zero-Shot         | ScanObjectNN   | [zeroshot_scan_objonly.yaml](./cfgs/zeroshot/scan_objonly.yaml)      | 43.7%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
 | Linear SVM        | ModelNet40     | [svm.yaml](./cfgs/svm/modelnet40.yaml)                               | 93.4%      | [ReCon svm](https://drive.google.com/file/d/1SvCfDzXM2QM7BfOd960z3759HY_c-eQv/view?usp=share_link)       |
 | Part Segmentation | ShapeNetPart   | [segmentation](./segmentation)                                       | 86.4% mIoU | [part seg](https://drive.google.com/file/d/13XuEsN7BDu-YX86ZSM1SpUHGMvDys2VH/view?usp=share_link)        |
 
@@ -121,9 +122,9 @@ CUDA_VISIBLE_DEVICES=<GPUs> python main.py --config cfgs/full/fewshot.yaml --fin
 --ckpts <path/to/pre-trained/model> --exp_name <exp_name> --way <5 or 10> --shot <10 or 20> --fold <0-9>
 ```
 ## 8. ReCon Zero-Shot
-Pre-training with the default configuration, run the script.
+Zero-shot with the default configuration, run the script:
 ```
-sh scripts/zeroshot.sh <GPU> <exp_name>
+bash scripts/zeroshot.sh <GPU> <exp_name> <path/to/pre-trained/model>
 ```
 ## 9. ReCon Part Segmentation
 Part segmentation on ShapeNetPart, run:
