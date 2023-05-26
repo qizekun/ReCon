@@ -84,7 +84,8 @@ def run_net(args, config, train_writer=None, val_writer=None):
 
     rignt_num = 0
     sample_num = 0
-    for (taxonomy_ids, model_ids, data) in itr_merge(train_dataloader, test_dataloader):
+    # for (taxonomy_ids, model_ids, data) in itr_merge(test_dataloader):      # for only test data
+    for (taxonomy_ids, model_ids, data) in itr_merge(train_dataloader, test_dataloader):  # for train and test data
         data_time.update(time.time() - batch_start_time)
 
         points = data[0].cuda()

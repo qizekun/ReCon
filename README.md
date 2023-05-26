@@ -63,7 +63,9 @@ We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [DA
 | Classification    | ModelNet40(1k) | [finetune_modelnet.yaml](./cfgs/full/finetune_modelnet.yaml)         | 94.5%      | [ModelNet_1k](https://drive.google.com/file/d/1UsRuIc7ND2n4PjYyF3n0tT3hf7alyOML/view?usp=share_link)     |
 | Classification    | ModelNet40(8k) | [finetune_modelnet_8k.yaml](./cfgs/full/finetune_modelnet_8k.yaml)   | 94.7%      | [ModelNet_8k](https://drive.google.com/file/d/1qUuT6sjhZw3gn0rFj-qDfYG6VMBXF0sT/view?usp=share_link)     |
 | Zero-Shot         | ModelNet10     | [zeroshot_modelnet10.yaml](./cfgs/zeroshot/modelnet10.yaml)          | 75.6%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
+| Zero-Shot         | ModelNet10*    | [zeroshot_modelnet10.yaml](./cfgs/zeroshot/modelnet10.yaml)          | 81.6%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
 | Zero-Shot         | ModelNet40     | [zeroshot_modelnet40.yaml](./cfgs/zeroshot/modelnet40.yaml)          | 61.7%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
+| Zero-Shot         | ModelNet40*    | [zeroshot_modelnet40.yaml](./cfgs/zeroshot/modelnet40.yaml)          | 66.8%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
 | Zero-Shot         | ScanObjectNN   | [zeroshot_scan_objonly.yaml](./cfgs/zeroshot/scan_objonly.yaml)      | 43.7%      | [ReCon zero-shot](https://drive.google.com/file/d/1Xz6lZn6MI2lJldPiSqLdAnjEm0dwQ4Mg/view?usp=share_link) |
 | Linear SVM        | ModelNet40     | [svm.yaml](./cfgs/svm/modelnet40.yaml)                               | 93.4%      | [ReCon svm](https://drive.google.com/file/d/1SvCfDzXM2QM7BfOd960z3759HY_c-eQv/view?usp=share_link)       |
 | Part Segmentation | ShapeNetPart   | [segmentation](./segmentation)                                       | 86.4% mIoU | [part seg](https://drive.google.com/file/d/13XuEsN7BDu-YX86ZSM1SpUHGMvDys2VH/view?usp=share_link)        |
@@ -73,7 +75,8 @@ We use ShapeNet, ScanObjectNN, ModelNet40 and ShapeNetPart in this work. See [DA
 | Few-shot learning | ModelNet40 | [fewshot.yaml](./cfgs/full/fewshot.yaml) | 97.3 ± 1.9 | 98.9 ± 1.2 | 93.3 ± 3.9 | 95.8 ± 3.0 | [ReCon](https://drive.google.com/file/d/1L-TlZUi7umBCDpZW-1F0Gf4X-9Wvf_Zo/view?usp=share_link) |
 
 The checkpoints and logs have been released on [Google Drive](https://drive.google.com/drive/folders/17Eoy5N96dcTQJplCOjyeeVjSYyjW5QEd?usp=share_link). You can use the voting strategy in classification testing to reproduce the performance reported in the paper.
-For classification downstream tasks, we randomly select 8 seeds to obtain the best checkpoint.
+For classification downstream tasks, we randomly select 8 seeds to obtain the best checkpoint. 
+For zero-shot learning, * means that we use all the train/test data for zero-shot transfer.
 
 ## 4. ReCon Pre-training
 Pre-training with the default configuration, run the script:
