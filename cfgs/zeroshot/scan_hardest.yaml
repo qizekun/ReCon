@@ -23,5 +23,5 @@ model : {
 }
 
 npoints: 2048
-total_bs : 32
+total_bs : 64
 grad_norm_clip : 10

@@ -25,6 +25,7 @@ This repository contains the code release of ReCon: **Contrast with Reconstruct:
 
 ## News
 
+- 🎊 Jun, 2023: Check out our latest work [**Point-GCC**](https://arxiv.org/abs/2305.19623), which achieves state-of-the-art performance on 3D object detection
 - 🎉 Apr, 2023: [**ReCon**](https://arxiv.org/abs/2302.02318) accepted by ICML 2023
 - 💥 Feb, 2023: Check out our previous work [**ACT**](https://arxiv.org/abs/2212.08320), which has been accepted by ICLR 2023
 

@@ -47,8 +47,8 @@ def main():
         assert config.total_bs % world_size == 0
         config.dataset.train.others.bs = config.total_bs // world_size
         if config.dataset.get('extra_train'):
-            config.dataset.extra_train.others.bs = config.total_bs // world_size * 2
-        config.dataset.val.others.bs = config.total_bs // world_size * 2
+            config.dataset.extra_train.others.bs = config.total_bs // world_size
+        config.dataset.val.others.bs = config.total_bs // world_size
         if config.dataset.get('test'):
             config.dataset.test.others.bs = config.total_bs // world_size
     else:
@@ -56,8 +56,8 @@ def main():
         if config.dataset.get('extra_train'):
             config.dataset.extra_train.others.bs = config.total_bs
         if config.dataset.get('extra_val'):
-            config.dataset.extra_val.others.bs = config.total_bs * 2
-        config.dataset.val.others.bs = config.total_bs * 2
+            config.dataset.extra_val.others.bs = config.total_bs
+        config.dataset.val.others.bs = config.total_bs
         if config.dataset.get('test'):
             config.dataset.test.others.bs = config.total_bs
             # log

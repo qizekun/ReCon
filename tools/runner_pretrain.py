@@ -51,7 +51,7 @@ def run_net(args, config, train_writer=None, val_writer=None):
 
     logger = get_logger(args.log_name)
     # build dataset
-    # config.dataset.train.others.whole = True
+    config.dataset.train.others.whole = True
     train_sampler, train_dataloader = builder.dataset_builder(args, config.dataset.train)
     if config.validate != "none":
         print_log("Load extra data to validate ...")
