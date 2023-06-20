@@ -10,7 +10,7 @@
 > [**Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining**](https://arxiv.org/abs/2302.02318) **ICML 2023** <br>
 > [Zekun Qi](https://github.com/qizekun)\*, [Runpei Dong](https://runpeidong.com/)\*, [Guofan Fan](https://github.com/Asterisci), [Zheng Ge](https://scholar.google.com.hk/citations?user=hJ-VrrIAAAAJ&hl=en&oi=ao), [Xiangyu Zhang](https://scholar.google.com.hk/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html) and [Li Yi](https://ericyi.github.io/) <br>
 
-[arXiv](https://arxiv.org/abs/2302.02318) | [Models](https://drive.google.com/drive/folders/17Eoy5N96dcTQJplCOjyeeVjSYyjW5QEd?usp=share_link)
+[OpenReview](https://openreview.net/forum?id=80IfYewOh1) | [arXiv](https://arxiv.org/abs/2302.02318) | [Models](https://drive.google.com/drive/folders/17Eoy5N96dcTQJplCOjyeeVjSYyjW5QEd?usp=share_link)
 
 This repository contains the code release of ReCon: **Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining** (ICML 2023). ReCon is also short for *reconnaissance* 🪖.
 
