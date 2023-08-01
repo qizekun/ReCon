@@ -8,7 +8,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/contrast-with-reconstruct-contrastive-3d/zero-shot-transfer-3d-point-cloud-2)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-2?p=contrast-with-reconstruct-contrastive-3d)
 
 > [**Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining**](https://arxiv.org/abs/2302.02318) **ICML 2023** <br>
-> [Zekun Qi](https://github.com/qizekun)\*, [Runpei Dong](https://runpeidong.com/)\*, [Guofan Fan](https://github.com/Asterisci), [Zheng Ge](https://scholar.google.com.hk/citations?user=hJ-VrrIAAAAJ&hl=en&oi=ao), [Xiangyu Zhang](https://scholar.google.com.hk/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html) and [Li Yi](https://ericyi.github.io/) <br>
+> [Zekun Qi](https://scholar.google.com/citations?user=ap8yc3oAAAAJ)\*, [Runpei Dong](https://runpeidong.com/)\*, [Guofan Fan](https://github.com/Asterisci), [Zheng Ge](https://scholar.google.com.hk/citations?user=hJ-VrrIAAAAJ&hl=en&oi=ao), [Xiangyu Zhang](https://scholar.google.com.hk/citations?user=yuB-cfoAAAAJ&hl=en&oi=ao), [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html) and [Li Yi](https://ericyi.github.io/) <br>
 
 [OpenReview](https://openreview.net/forum?id=80IfYewOh1) | [arXiv](https://arxiv.org/abs/2302.02318) | [Models](https://drive.google.com/drive/folders/17Eoy5N96dcTQJplCOjyeeVjSYyjW5QEd?usp=share_link)
 
@@ -25,27 +25,32 @@ This repository contains the code release of ReCon: **Contrast with Reconstruct:
 
 ## News
 
-- 🎊 Jun, 2023: Check out our latest work [**Point-GCC**](https://arxiv.org/abs/2305.19623), which achieves state-of-the-art performance on 3D object detection
+- 📌 Aug, 2023: Check out our exploration of efficient conditional 3D generation [**VPP**](https://arxiv.org/abs/2307.16605)
+- 📌 Jun, 2023: Check out our exploration of pre-training in 3D scenes [**Point-GCC**](https://arxiv.org/abs/2305.19623)
 - 🎉 Apr, 2023: [**ReCon**](https://arxiv.org/abs/2302.02318) accepted by ICML 2023
 - 💥 Feb, 2023: Check out our previous work [**ACT**](https://arxiv.org/abs/2212.08320), which has been accepted by ICLR 2023
 
 ## 1. Requirements
-PyTorch >= 1.7.0 < 1.11.0;
+PyTorch >= 1.7.0;
 python >= 3.7;
 CUDA >= 9.0;
 GCC >= 4.9;
 torchvision;
 
 ```
-pip install -r requirements.txt
+# Quick Start
+conda create -n recon python=3.8 -y
+conda activate recon
+
+conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch -c nvidia
+# pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 ```
-# Chamfer Distance & emd
-cd ./extensions/chamfer_dist
-python setup.py install --user
-cd ./extensions/emd
-python setup.py install --user
+# Install basic required packages
+pip install -r requirements.txt
+# Chamfer Distance
+cd ./extensions/chamfer_dist && python setup.py install --user
 # PointNet++
 pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet2_ops&subdirectory=pointnet2_ops_lib"
 ```
@@ -153,7 +158,7 @@ sh scripts/svm.sh <GPU> <exp_name> <path/to/pre-trained/model>
 ```
 
 ## 11. Visualization
-We use [PointVisualizaiton](https://github.com/qizekun/PointVisualizaiton) repo to render beautiful pointcloud image, including specified color rendering and attention distribution rendering.
+We use [PointVisualizaiton](https://github.com/qizekun/PointVisualizaiton) repo to render beautiful point cloud image, including specified color rendering and attention distribution rendering.
 
 
 ## Contact
