@@ -25,7 +25,8 @@ This repository contains the code release of ReCon: **Contrast with Reconstruct:
 
 ## News
 
-- 💥 Mar, 2024: Check out our latest work [**ShapeLLM**](https://qizekun.github.io/shapellm/), which achieves **95.25%** fine-tuned accuracy and **65.4** zero-shot accuracy on ScanObjectNN
+- 🍾 July, 2024: [**ShapeLLM (ReCon++)**](https://qizekun.github.io/shapellm/) accepted by ECCV 2024, check out the [code](https://github.com/qizekun/ShapeLLM)
+- 💥 Mar, 2024: Check out our latest work [**ShapeLLM (ReCon++)**](https://qizekun.github.io/shapellm/), which achieves **95.25%** fine-tuned accuracy and **65.4** zero-shot accuracy on ScanObjectNN
 - 📌 Aug, 2023: Check out our exploration of efficient conditional 3D generation [**VPP**](https://arxiv.org/abs/2307.16605)
 - 📌 Jun, 2023: Check out our exploration of pre-training in 3D scenes [**Point-GCC**](https://arxiv.org/abs/2305.19623)
 - 🎉 Apr, 2023: [**ReCon**](https://arxiv.org/abs/2302.02318) accepted by ICML 2023
@@ -195,10 +196,10 @@ and closely related work [ACT](https://github.com/RunpeiDong/ACT) and [ShapeLLM]
   year={2023},
   url={https://openreview.net/forum?id=8Oun8ZUVe8N}
 }
-@article{qi2024shapellm,
+@inproceedings{qi2024shapellm,
   author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Wang, He and Yi, Li and Ma, Kaisheng},
   title = {ShapeLLM: Universal 3D Object Understanding for Embodied Interaction},
-  journal = {arXiv preprint arXiv:2402.17766},
+  booktitle={European Conference on Computer Vision (ECCV) },
   year = {2024}
 }
 ```
