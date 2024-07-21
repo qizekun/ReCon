@@ -14,7 +14,7 @@
 
 This repository contains the code release of ReCon: **Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining** (ICML 2023). ReCon is also short for *reconnaissance* 🪖.
 
-## Contrast with Reconstruct
+## Contrast with Reconstruct (ICML 2023)
 
 [//]: # (Mainstream 3D representation learning approaches are built upon contrastive or generative modeling pretext tasks, where great improvements in performance on various downstream tasks have been achieved. However, by investigating the methods of these two paradigms, we find that &#40;i&#41; contrastive models are data-hungry that suffer from a representation over-fitting issue; &#40;ii&#41; generative models have a data filling issue that shows inferior data scaling capacity compared to contrastive models. This motivates us to learn 3D representations by sharing the merits of both paradigms, which is non-trivial due to the pattern difference between the two paradigms. In this paper, we propose *contrast with reconstruct* &#40;**ReCon**&#41; that unifies these two paradigms. ReCon is trained to learn from both generative modeling teachers and cross-modal contrastive teachers through ensemble distillation, where the generative student is used to guide the contrastive student. An encoder-decoder style ReCon-block is proposed that transfers knowledge through cross attention with stop-gradient, which avoids pretraining over-fitting and pattern difference issues. ReCon achieves a new state-of-the-art in 3D representation learning, e.g., 91.26% accuracy on ScanObjectNN.)
 
@@ -41,11 +41,11 @@ torchvision;
 
 ```
 # Quick Start
-conda create -n recon python=3.8 -y
+conda create -n recon python=3.10 -y
 conda activate recon
 
-conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch -c nvidia
-# pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+conda install pytorch==2.0.1 torchvision==0.15.2 cudatoolkit=11.8 -c pytorch -c nvidia
+# pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 ```
@@ -197,7 +197,7 @@ and closely related work [ACT](https://github.com/RunpeiDong/ACT) and [ShapeLLM]
   url={https://openreview.net/forum?id=8Oun8ZUVe8N}
 }
 @inproceedings{qi2024shapellm,
-  author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Wang, He and Yi, Li and Ma, Kaisheng},
+  author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Yi, Li and Ma, Kaisheng},
   title = {ShapeLLM: Universal 3D Object Understanding for Embodied Interaction},
   booktitle={European Conference on Computer Vision (ECCV) },
   year = {2024}
